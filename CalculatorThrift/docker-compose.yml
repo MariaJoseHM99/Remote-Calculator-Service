@@ -1,0 +1,34 @@
+version: '3.4'
+
+services:
+    server:
+        build:
+            context: .
+            dockerfile: ./server/Dockerfile
+        network_mode: host
+        expose:
+            - "8080"
+        ports:
+            - "0.0.0.0:8080:8080"
+        volumes:
+            - ./server:/server
+        stdin_open: true
+        tty: true
+        
+    client:
+        build:
+            context: .
+            dockerfile: ./client/Dockerfile
+        network_mode: host
+        expose:
+            - "8080"
+        ports:
+            - "0.0.0.0:8080:8080"
+        volumes:
+            - ./client:/client
+        stdin_open: true
+        tty: true
+            
+       
+        
+   
