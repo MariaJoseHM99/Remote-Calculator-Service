@@ -1,2 +1,8 @@
 # Remote-Calculator-Service
-Implementación de un sistema para realizar la adición, substracción, multiplicación y división de enteros de forma remota mediante Apache Thrift.
+
+ 1. Desplazarse a la raíz del repositorio (CalculadoraThriftDocker)
+ 2. Construir las imágenes del cliente y servidor: docker-compose build
+ 3. Crear los contenedores: docker-compose create
+ 4. Ver el nombre de los contenedores creados: docker-compose ps -a
+ 5. Iniciar el contenedor del servidor: docker start [nombreContenedorServidor]
+ 6. Iniciar el contenedor del cliente en modo interactivo: docker start -i [nombreContenedorCliente]
