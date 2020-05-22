@@ -1,6 +1,6 @@
 # Remote-Calculator-Service
 
- 1. Desplazarse a la raíz del repositorio (CalculadoraThriftDocker)
+ 1. Desplazarse a la raíz del repositorio (CalculatorThrift)
  2. Construir las imágenes del cliente y servidor: docker-compose build
  3. Crear los contenedores: docker-compose create
  4. Ver el nombre de los contenedores creados: docker-compose ps -a
